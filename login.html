@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+        }
+        #loginBlock {
+            position: fixed;
+            top: 29%;
+            /* color: #f1f1f1; */
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 450px;
+            left: 30%;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+        #loginBlock form {
+            padding: 0 40px;
+            width: 100%;
+        }
+        #loginBlock form h3 {
+            padding: 20px 0;
+        }
+        #loginBlock input {
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        #loginBlock input:focus {
+            background-color: #ffffff2e;
+        }
+        #loginBlock button {
+            background-color: #af67f3;
+            padding: 5px 15px;
+            margin: 15px;
+            border-width: 0;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./assets/Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <div id="loginBlock">
+        <form>
+            <div><h3>Create Gmail Account</h3></div>
+            <div>
+                <input placeholder="Full Name" name="fName" type="text" />
+                <input placeholder="Contact Number" name="phone" type="tel" />
+                <input placeholder="Enter email id" name="email" type="email" />
+            </div>
+            <div>
+                <button>Reset</button>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
