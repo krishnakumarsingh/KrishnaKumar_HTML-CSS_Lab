@@ -49,7 +49,7 @@
             display: flex;
         }
 
-        nav.header-nav ul li div {
+        nav.header-nav ul li ul {
             display: none;
         }
 
@@ -57,7 +57,7 @@
             background-color: #262626;
         }
 
-        nav.header-nav ul li:hover div {
+        nav.header-nav ul li:hover ul {
             display: block;
             position: absolute;
             top: 100%;
@@ -65,15 +65,15 @@
             background: #f5f5f5;
         }
 
-        nav.header-nav ul li div ul {
+        nav.header-nav ul li ul {
             flex-direction: column;
         }
 
-        nav.header-nav ul li div ul li:hover {
+        nav.header-nav ul li ul li:hover {
             background-color: transparent;
         }
 
-        nav.header-nav ul li div ul li a {
+        nav.header-nav ul li ul li a {
             color: #5998c7;
         }
     </style>
@@ -90,13 +90,11 @@
                 </li>
                 <li>
                     <a href="#">Link 2</a>
-                    <div>
-                        <ul>
-                            <li><a href="#">DD_link_1</a></li>
-                            <li><a href="#">DD_link_2</a></li>
-                            <li><a href="#">DD_link_3</a></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><a href="#">DD_link_1</a></li>
+                        <li><a href="#">DD_link_2</a></li>
+                        <li><a href="#">DD_link_3</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">Link 3</a>
