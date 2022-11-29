@@ -10,14 +10,14 @@
             padding: 0;
             margin: 0;
         }
-        #myVideo {
+        .myVideo {
             position: fixed;
             right: 0;
             bottom: 0;
             min-width: 100%; 
             min-height: 100%;
         }
-        #loginBlock {
+        .loginBlock {
             position: fixed;
             top: 29%;
             /* color: #f1f1f1; */
@@ -30,24 +30,24 @@
             border: 1px solid #fff;
             border-radius: 5px;
         }
-        #loginBlock form {
+        .loginBlock form {
             padding: 0 40px;
             width: 100%;
         }
-        #loginBlock form h3 {
+        .loginBlock form h3 {
             padding: 20px 0;
         }
-        #loginBlock input {
+        .loginBlock input {
             padding: 10px;
             box-sizing: border-box;
             width: 100%;
             margin-bottom: 10px;
             font-size: 24px;
         }
-        #loginBlock input:focus {
+        .loginBlock input:focus {
             background-color: #ffffff2e;
         }
-        #loginBlock button {
+        .loginBlock button {
             background-color: #af67f3;
             padding: 5px 15px;
             margin: 15px;
@@ -58,11 +58,11 @@
     </style>
 </head>
 <body>
-    <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop class="myVideo">
         <source src="./assets/Background.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
-    <div id="loginBlock">
+    <div class="loginBlock">
         <form>
             <div><h3>Create Gmail Account</h3></div>
             <div>
