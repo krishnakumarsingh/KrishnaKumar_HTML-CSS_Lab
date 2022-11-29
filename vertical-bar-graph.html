@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
             padding: 0;
             margin: 0;
         }
+
         .verticleBarGraph {
             display: flex;
             align-items: center;
@@ -17,39 +19,47 @@
             text-align: center;
             margin: 20px;
         }
+
         .verticleBarGraph .verticle-bar-graph {
             padding-top: 40px;
             padding-bottom: 40px;
             width: 500px;
             background-color: #f5f5f5;
         }
+
         .verticleBarGraph .verticle-bar-graph .flex-block {
             display: flex;
             justify-content: space-around;
             padding-bottom: 110px;
         }
-        .verticleBarGraph .verticle-bar-graph .flex-block > div {
+
+        .verticleBarGraph .verticle-bar-graph .flex-block>div {
             height: 500px;
             width: 58px;
             background-color: #ffffff;
             position: relative;
         }
-        .verticleBarGraph .verticle-bar-graph .flex-block > div .bar-fill {
+
+        .verticleBarGraph .verticle-bar-graph .flex-block>div .bar-fill {
             content: " ";
             width: 100%;
             position: absolute;
             bottom: 0;
             background-color: #cac6c0;
         }
-        .verticleBarGraph .verticle-bar-graph .flex-block > div .graph1 .bar-fill {
+
+        .verticleBarGraph .verticle-bar-graph .flex-block>div .graph1 .bar-fill {
             height: 30%;
         }
-        .verticleBarGraph .verticle-bar-graph .flex-block > div .graph2 .bar-fill {
+
+        .verticleBarGraph .verticle-bar-graph .flex-block>div .graph2 .bar-fill {
             height: 40%;
         }
-        .verticleBarGraph .verticle-bar-graph .flex-block > div .graph3 .bar-fill {
+
+        .verticleBarGraph .verticle-bar-graph .flex-block>div .graph3 .bar-fill {
             height: 80%;
         }
+
         .verticleBarGraph .verticle-bar-graph .flex-block span {
             position: absolute;
             bottom: -50px;
@@ -59,16 +69,30 @@
         }
     </style>
 </head>
+
 <body>
     <div class="verticleBarGraph">
         <div class="verticle-bar-graph">
             <div class="flex-block">
-                <div><div class="graph1"><div class="bar-fill"></div></div><span>30%</div>
-                <div><div class="graph2"><div class="bar-fill"></div></div><span>40%</span></div>
-                <div><div class="graph3"><div class="bar-fill"></div></div><span>80%</span></div>
+                <div>
+                    <div class="graph1">
+                        <div class="bar-fill"></div>
+                    </div><span>30%
+                </div>
+                <div>
+                    <div class="graph2">
+                        <div class="bar-fill"></div>
+                    </div><span>40%</span>
+                </div>
+                <div>
+                    <div class="graph3">
+                        <div class="bar-fill"></div>
+                    </div><span>80%</span>
+                </div>
             </div>
             <h1>Bar Plot</h1>
         </div>
     </div>
 </body>
+
 </html>

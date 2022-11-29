@@ -11,23 +11,28 @@
             padding: 0;
             margin: 0;
         }
+
         header {
             background-color: red;
             padding: 20px 0;
             font-weight: bold;
             text-align: right;
         }
+
         header h1 {
             width: 80%;
             margin: 0 auto;
         }
+
         nav.header-nav {
             background-color: #7f7f7f;
         }
+
         nav.header-nav div {
             width: 80%;
             margin: 0 auto;
         }
+
         nav.header-nav ul {
             display: flex;
             flex-direction: row;
@@ -35,21 +40,26 @@
             margin-bottom: 0;
             list-style: none;
         }
+
         nav.header-nav ul li {
             position: relative;
         }
+
         nav.header-nav ul li a {
             color: white;
             padding: 10px;
             text-decoration: none;
             display: flex;
         }
+
         nav.header-nav ul li div {
             display: none;
         }
+
         nav.header-nav ul li:hover {
             background-color: #262626;
         }
+
         nav.header-nav ul li:hover div {
             display: block;
             position: absolute;
@@ -57,12 +67,15 @@
             width: 114px;
             background: #f5f5f5;
         }
+
         nav.header-nav ul li div ul {
             flex-direction: column;
         }
+
         nav.header-nav ul li div ul li:hover {
             background-color: transparent;
         }
+
         nav.header-nav ul li div ul li a {
             color: #5998c7;
         }
@@ -74,26 +87,24 @@
         <h1>Demmo of Dropdown</h1>
     </header>
     <nav class="header-nav">
-        <div class="">
-            <ul>
-                <li>
-                    <a href="#">Link 1</span></a>
-                </li>
-                <li>
-                    <a href="#">Link 2</a>
-                    <div>
-                        <ul>
-                            <li><a href="#">DD_link_1</a></li>
-                            <li><a href="#">DD_link_2</a></li>
-                            <li><a href="#">DD_link_3</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Link 3</a>
-                </li>
-            </ul>
-        </div>
+        <ul>
+            <li>
+                <a href="#">Link 1</span></a>
+            </li>
+            <li>
+                <a href="#">Link 2</a>
+                <div>
+                    <ul>
+                        <li><a href="#">DD_link_1</a></li>
+                        <li><a href="#">DD_link_2</a></li>
+                        <li><a href="#">DD_link_3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Link 3</a>
+            </li>
+        </ul>
     </nav>
 </body>
 

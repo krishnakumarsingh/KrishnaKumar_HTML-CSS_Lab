@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,15 @@
             padding: 0;
             margin: 0;
         }
+
         .myVideo {
             position: fixed;
             right: 0;
             bottom: 0;
-            min-width: 100%; 
+            min-width: 100%;
             min-height: 100%;
         }
+
         .loginBlock {
             position: fixed;
             top: 29%;
@@ -30,13 +33,16 @@
             border: 1px solid #fff;
             border-radius: 5px;
         }
+
         .loginBlock form {
             padding: 0 40px;
             width: 100%;
         }
+
         .loginBlock form h3 {
             padding: 20px 0;
         }
+
         .loginBlock input {
             padding: 10px;
             box-sizing: border-box;
@@ -44,9 +50,11 @@
             margin-bottom: 10px;
             font-size: 24px;
         }
+
         .loginBlock input:focus {
             background-color: rgb(255, 255, 255, 35%);
         }
+
         .loginBlock button {
             background-color: #af67f3;
             padding: 5px 15px;
@@ -57,14 +65,17 @@
         }
     </style>
 </head>
+
 <body>
     <video autoplay muted loop class="myVideo">
         <source src="./assets/Background.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
-      </video>
+    </video>
     <div class="loginBlock">
         <form>
-            <div><h3>Create Gmail Account</h3></div>
+            <div>
+                <h3>Create Gmail Account</h3>
+            </div>
             <div>
                 <input type="text" placeholder="Full Name" name="fName" />
                 <input type="number" placeholder="Contact Number" name="phone" min="60000000000" max="9999999999" />
@@ -77,4 +88,5 @@
         </form>
     </div>
 </body>
+
 </html>
